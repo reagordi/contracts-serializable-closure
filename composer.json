@@ -1,18 +1,20 @@
 {
-    "name": "reagordi/package-template",
+    "name": "reagordi/contracts-serializable-closure",
     "type": "library",
-    "description": "package-template",
+    "description": "Designed to work with objects",
     "keywords": [
-        "package-template"
+        "contracts",
+        "framework",
+        "reagordi"
     ],
     "homepage": "https://reagordi.com/",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/reagordi/package-template/issues?state=open",
+        "issues": "https://github.com/reagordi/contracts-serializable-closure/issues?state=open",
         "forum": "https://forum.reagordi.com/",
         "wiki": "https://wiki.reagordi.com/",
         "chat": "https://t.me/reagordi_community",
-        "source": "https://github.com/reagordi/package-template"
+        "source": "https://github.com/reagordi/contracts-serializable-closure"
     },
     "funding": [
         {
@@ -24,10 +26,11 @@
             "url": "https://github.com/sponsors/reagordi"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "reagordi/contracts-exceptions": "^1.0"
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^4.7",
@@ -39,12 +42,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Reagordi\\_____\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Reagordi\\_____\\Tests\\": "tests"
+            "Reagordi\\Contracts\\SerializableClosure\\": "src"
         }
     },
     "config": {
@@ -53,9 +51,5 @@
             "infection/extension-installer": true,
             "composer/package-versions-deprecated": true
         }
-    },
-    "scripts": {
-        "test": "phpunit --testdox --no-interaction",
-        "test-watch": "phpunit-watcher watch"
     }
 }
